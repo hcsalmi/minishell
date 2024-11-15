@@ -1,7 +1,6 @@
 # minishell
 A Hive Helsinki school project. Keywords: C, Unix logic<br />
-<br />
-A project made together with Elina Sirniö (github: Sir-Eli).<br />
+This project was done together with Elina Sirniö (github: Sir-Eli).<br />
 <br />
 The goal:<br />
 The objective of this project was to create a shell, essentially your own bash. The project helps you, among other things, understand processes and file descriptors.<br />
