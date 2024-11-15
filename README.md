@@ -8,26 +8,26 @@ The objective of this project was to create a shell, essentially your own bash. 
 <br />
 The specifics:<br />
 Your shell should:<br />
-• Display a prompt when waiting for a new command.<br /><br />
-• Have a working history.<br /><br />
-• Search and launch the right executable (based on the PATH variable or using a relative or an absolute path).<br /><br />
-• Avoid using more than one global variable to indicate a received signal. Consider the implications: this approach ensures that your signal handler will not access your main data structures. This global variable cannot provide any other  information or data access than the number of a received  signal.  Therefore, using "norm" type structures in the global scope is forbidden.<br /><br />
-• Not interpret unclosed quotes or special characters which are not required by the subject such as \ (backslash) or ; (semicolon).<br /><br />
-• Handle ’ (single quote) which should prevent the shell from interpreting the metacharacters in the quoted sequence.<br /><br />
-• Handle " (double quote) which should prevent the shell from interpreting the metacharacters in the quoted sequence except for $ (dollar sign).<br /><br />
+• Display a prompt when waiting for a new command.<br />
+• Have a working history.<br />
+• Search and launch the right executable (based on the PATH variable or using a relative or an absolute path).<br />
+• Avoid using more than one global variable to indicate a received signal. Consider the implications: this approach ensures that your signal handler will not access your main data structures. This global variable cannot provide any other  information or data access than the number of a received  signal.  Therefore, using "norm" type structures in the global scope is forbidden.<br />
+• Not interpret unclosed quotes or special characters which are not required by the subject such as \ (backslash) or ; (semicolon).<br /><
+• Handle ’ (single quote) which should prevent the shell from interpreting the metacharacters in the quoted sequence.<br />
+• Handle " (double quote) which should prevent the shell from interpreting the metacharacters in the quoted sequence except for $ (dollar sign).<br />
 • Implement redirections:<br />
 &emsp;◦ < should redirect input.<br />
 &emsp;◦ > should redirect output.<br />
 &emsp;◦ << should be given a delimiter, then read the input until a line containing the delimiter is seen. However, it doesn’t have to update the history!<br />
 ◦ >> should redirect output in append mode.<br /><br />
-• Implement pipes (| character). The output of each command in the pipeline is connected to the input of the next command via a pipe.<br /><br />
-• Handle environment variables ($ followed by a sequence of characters) which should expand to their values.<br /><br />
-• Handle $? which should expand to the exit status of the most recently executed foreground pipeline.<br /><br />
-• Handle ctrl-C, ctrl-D and ctrl-\ which should behave like in bash.<br /><br />
-• In interactive mode:<br /><br />
+• Implement pipes (| character). The output of each command in the pipeline is connected to the input of the next command via a pipe.<br />
+• Handle environment variables ($ followed by a sequence of characters) which should expand to their values.<br />
+• Handle $? which should expand to the exit status of the most recently executed foreground pipeline.<br />
+• Handle ctrl-C, ctrl-D and ctrl-\ which should behave like in bash.<br />
+• In interactive mode:<br />
 &emsp;◦ ctrl-C displays a new prompt on a new line.<br />
 &emsp;◦ ctrl-D exits the shell.<br />
-&emsp;◦ ctrl-\ does nothing.<br />
+&emsp;◦ ctrl-\ does nothing.<br /><br />
 • Your shell must implement the following builtins:<br />
 &emsp;◦ echo with option -n<br />
 &emsp;◦ cd with only a relative or absolute path<br />
