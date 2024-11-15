@@ -11,7 +11,7 @@ Your shell should:<br />
 • Display a prompt when waiting for a new command.<br />
 • Have a working history.<br />
 • Search and launch the right executable (based on the PATH variable or using a relative or an absolute path).<br />
-• Avoid using more than one global variable to indicate a received signal. Consider the implications: this approach ensures that your signal handler will not access your main data structures. This global variable cannot provide any other  information or data access than the number of a received  signal.  Therefore, using "norm" type structures in the global scope is forbidden.<br />
+• Avoid using more than one global variable to indicate a received signal. Consider the implications: this approach ensures that your signal handler will not access your &ensp;main data structures. This global variable cannot provide any other  information or data access than the number of a received  signal.  Therefore, using "norm" type &ensp;structures in the global scope is forbidden.<br />
 • Not interpret unclosed quotes or special characters which are not required by the subject such as \ (backslash) or ; (semicolon).<br />
 • Handle ’ (single quote) which should prevent the shell from interpreting the metacharacters in the quoted sequence.<br />
 • Handle " (double quote) which should prevent the shell from interpreting the metacharacters in the quoted sequence except for $ (dollar sign).<br />
