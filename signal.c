@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   signal.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esirnio <esirnio@student.42.fr>            +#+  +:+       +#+        */
+/*   By: lsalmi <lsalmi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 18:19:16 by lsalmi            #+#    #+#             */
 /*   Updated: 2023/10/11 13:41:13 by esirnio          ###   ########.fr       */
